@@ -3,6 +3,9 @@ set LIB=%LIBRARY_LIB%;%LIB%
 set LIBPATH=%LIBRARY_LIB%;%LIBPATH%
 set INCLUDE=%LIBRARY_INC%;%INCLUDE%
 
+:: Remove -GL from CXXFLAGS as this causes a fatal error
+set "CXXFLAGS= -MD"
+
 cmake -G "NMake Makefiles" -D CMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% -D CMAKE_BUILD_TYPE=Release .
 if errorlevel 1 exit 1
 
