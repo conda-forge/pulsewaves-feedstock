@@ -10,7 +10,7 @@ source:
   sha256: b1c07d45a03711ff5fee1ea1f3dbbf2d9a355e0b9451bd31b0238339beaa4172
 
 build:
-  number: 1000
+  number: 1001
 
 requirements:
   build:
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://rapidlasso.com/pulsewaves/
-  license: LGPL2.1
+  license: LGPL-2.1-only
   license_file: COPYING.txt
   summary: An open source effort for a vendor-neutral exchange format for geo-referenced full waveform LiDAR
 
